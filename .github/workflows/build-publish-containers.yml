@@ -11,7 +11,7 @@ jobs:
       matrix:
         tag:
           - bear-accessibility
-          - test
+          - climb
       fail-fast: false
     steps:
       - name: Check out the repo
@@ -64,7 +64,7 @@ jobs:
       matrix:
         tag:
           - bear-accessibility
-          - test
+          - climb
     steps:
       - name: Login to GitHub Container Registry
         if: github.event_name == 'push' && github.ref_name == 'main'
